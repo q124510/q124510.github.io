@@ -1,61 +1,36 @@
 <main class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-  <div class="rounded-lg border bg-card text-card-foreground shadow-sm max-w-md w-full space-y-4" data-v0-t="card">
-    <div class="flex flex-col space-y-1.5 p-6">
-      <h3 class="font-semibold tracking-tight text-2xl text-center">Leave a Message</h3>
+  <div class="max-w-md w-full bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="px-4 py-2">
+      <h2 class="text-gray-800 text-3xl font-semibold">Leave a Message</h2>
     </div>
-    <div class="p-6">
-      <form class="space-y-4">
-        <div class="space-y-2">
-          <label
-            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            for="name"
-          >
-            Name
-          </label>
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            id="name"
-            placeholder="Enter your name"
-            required=""
-            type="text"
-          />
-        </div>
-        <div class="space-y-2">
-          <label
-            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            for="email"
-          >
-            Email
-          </label>
-          <input
-            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-            id="email"
-            placeholder="Enter your email"
-            required=""
-            type="email"
-          />
-        </div>
-        <div class="space-y-2">
-          <label
-            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-            for="message"
-          >
-            Message
-          </label>
-          <textarea
-            class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[100px]"
-            id="message"
-            placeholder="Type your message here"
-            required=""
-          ></textarea>
-        </div>
-        <button
-          class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-blue-500 text-white"
-          type="submit"
-        >
-          Submit
-        </button>
+    <div class="px-4 py-2 bg-gray-100">
+      <form class="mb-4">
+        <label for="message-text" class="block text-gray-700 text-sm font-bold mb-2">
+          Your Message:
+        </label>
+        <textarea
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none"
+          id="message-text"
+        ></textarea>
       </form>
+    </div>
+    <div class="px-4 py-2 bg-gray-100">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        type="button"
+      >
+        Save Message
+      </button>
+    </div>
+  </div>
+  <div class="max-w-md w-full bg-white shadow-lg rounded-lg overflow-hidden mt-6">
+    <div class="px-4 py-2">
+      <h2 class="text-gray-800 text-3xl font-semibold">Your Saved Messages</h2>
+    </div>
+    <div class="px-4 py-2 bg-gray-100">
+      <div class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none overflow-y-scroll">
+        <p class="text-gray-700 text-sm">No saved messages</p>
+      </div>
     </div>
   </div>
 </main>
