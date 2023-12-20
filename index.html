@@ -1,90 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>我的个人网页</title>
-
-    <!--添加CSS样式-->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #00a196;
-            color: #fff;
-            padding: 60px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        img {
-            height: 120px;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-
-        .intro {
-            margin: 50px auto;
-            padding: 0 20px;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin: 0 0 20px 0;
-            padding: 0;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            color: #333;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        footer {
-            background-color: #ccc;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <!-- Logo 和标题 -->
-    <header>
-        <img src="https://i.postimg.cc/pryBRZgW/Group.gif" alt="logo" />
-        <h1>初音未来</h1>
-    </header>
-    
-    
-    <!-- 个人介绍 -->
-    <div class="intro">
-        <h2>关于虚拟偶像</h2>
-        <p>Hastune Miku的介绍</p>
+﻿<main class="container mx-auto p-6">
+  <div class="grid gap-6">
+    <h1 class="text-3xl font-bold text-center">Anonymous Comments</h1>
+    <div class="border text-card-foreground bg-white shadow rounded-lg" data-v0-t="card">
+      <div class="flex flex-col space-y-1.5 p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-semibold">Comment #1</h2>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 font-bold text-xs bg-gray-200 text-gray-800">
+            IP: 192.168.0.1
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm">Posted on: 12/12/2023, 14:30</p>
+      </div>
+      <div class="p-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non neque a purus lobortis aliquam.</p>
+      </div>
     </div>
-
-    <!-- 个人主页链接 -->
-    <footer>
-        <p>
-          访问主页：
-          <a href="https://space.bilibili.com/399918500?spm_id_from=333.337.0.0">bilibili</a>
-        </p>
-    </footer>
-</body>
-</html>
+    <div class="border text-card-foreground bg-white shadow rounded-lg" data-v0-t="card">
+      <div class="flex flex-col space-y-1.5 p-4">
+        <div class="flex justify-between items-center">
+          <h2 class="text-lg font-semibold">Comment #2</h2>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 font-bold text-xs bg-gray-200 text-gray-800">
+            IP: 192.168.0.2
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm">Posted on: 12/12/2023, 15:00</p>
+      </div>
+      <div class="p-4">
+        <p>Nulla facilisi. Sed non semper est, sed euismod orci. Donec id ante quis erat iaculis fermentum.</p>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <button class="inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 bg-blue-500 text-white py-2 px-4 rounded">
+        Load More
+      </button>
+    </div>
+  </div>
+</main>
